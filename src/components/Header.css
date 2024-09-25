@@ -1,0 +1,40 @@
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.header-left, .header-right {
+  display: flex;
+  align-items: center;
+}
+
+.menu-btn, .refresh-btn, .favorites-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon {
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.cart-amount {
+  font-size: 14px;
+}

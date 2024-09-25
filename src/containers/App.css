@@ -1,0 +1,265 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D3D3D3; /* Changed to light gray */
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  header {
+    background: #35495e;
+    color: white;
+    padding-top: 10px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+  }
+  
+  header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  
+  header ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+  }
+  
+  header #branding {
+    float: left;
+    display: flex;
+    align-items: center;
+  }
+  
+  header #branding svg {
+    margin-right: 10px;
+  }
+  
+  header nav {
+    float: right;
+    margin-top: 10px;
+  }
+  
+  header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+  }
+  
+  header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+  }
+  
+  /* Showcase */
+  #showcase {
+    min-height: 400px;
+    background-color: #35495e; /* Replace image with a solid color */
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  #showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+  }
+  
+  #showcase p {
+    font-size: 20px;
+  }
+  
+  /* Newsletter */
+  #newsletter {
+    padding: 15px;
+    color: #ffffff;
+    background: #35495e
+  }
+  
+  #newsletter h1 {
+    float: left;
+    margin-bottom: 10px
+  }
+  
+  #newsletter form {
+    float: right;
+    margin-top: 15px;
+  }
+  
+  #newsletter input[type="email"] {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+  }
+  
+  /* Boxes */
+  #boxes {
+    margin-top: 20px;
+  }
+  
+  #boxes .box {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+  }
+  
+  #boxes .box img {
+    width: 90px;
+    height: auto;
+  }
+  
+  /* Sidebar */
+  aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+  }
+  
+  aside#sidebar .quote input, 
+  aside#sidebar .quote textarea {
+    width: 90%;
+    padding: 5px;
+  }
+  
+  /* Main-col */
+  article#main-col {
+    float: left;
+    width: 65%;
+  }
+  
+  /* Services */
+  ul#services {
+    list-style: none;
+    padding: 20px;
+  }
+  
+  ul#services li {
+    background: #e6e6e6;
+    padding: 20px;
+    margin-bottom: 5px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #35495e;
+    color: #ffffff;
+    padding: 20px 0;
+    margin-top: 20px;
+  }
+
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer p {
+    margin: 0;
+  }
+
+  footer nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  footer nav ul li {
+    margin-left: 20px;
+  }
+
+  footer nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  footer nav ul li a:hover {
+    color: #e8491d;
+  }
+
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+    }
+
+    header {
+      padding-bottom: 20px;
+    }
+
+    header #branding,
+    header nav,
+    header nav li {
+      float: none;
+      text-align: center;
+      width: 100%;
+    }
+
+    header #branding {
+      margin-bottom: 20px;
+    }
+
+    header nav ul {
+      display: flex;
+      flex-direction: column;
+    }
+
+    header nav li {
+      padding: 10px 0;
+    }
+
+    #showcase h1 {
+      margin-top: 40px;
+      font-size: 35px;
+    }
+
+    #newsletter h1,
+    #newsletter form {
+      float: none;
+      text-align: center;
+      width: 100%;
+    }
+
+    #newsletter form input[type="email"] {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+
+    #boxes .box {
+      float: none;
+      text-align: center;
+      width: 100%;
+    }
+
+    aside#sidebar,
+    article#main-col {
+      float: none;
+      width: 100%;
+    }
+
+    footer .container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    footer nav ul {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+
+    footer nav ul li {
+      margin: 10px 0;
+    }
+  }

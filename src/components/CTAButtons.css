@@ -1,0 +1,36 @@
+.cta-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.cta-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.vente-adsl {
+  background-color: #e8491d;
+}
+
+.demande-technicien {
+  background-color: #35495e;
+}
+
+.promotion {
+  background-color: #4CAF50;
+}
+
+@media (max-width: 768px) {
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-btn {
+    margin-bottom: 10px;
+  }
+}
